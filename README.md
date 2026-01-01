@@ -52,9 +52,9 @@ Les écrans se trouvent dans `app/` (Expo Router) :
 
 ### Login
 
-> Ajoute le fichier `assets/images/login.png` (ou renomme ton image) pour que la capture s'affiche ici.
+> Ajoute le fichier `assets/images/log-in.png` (ou renomme ton image) pour que la capture s'affiche ici.
 
-![Login](assets/images/login.png)
+![Login](assets/images/log-in.png)
 
 ### Sign Up
 
