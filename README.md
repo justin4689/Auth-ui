@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# Auth UI (Expo / React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+UI d'authentification réalisée avec Expo + Expo Router.
 
-## Get started
+## Fonctionnalités
 
-1. Install dependencies
+- **Login**
+- **Sign Up**
+- **Forgot Password**
+- **Verify Email (OTP)**
+- **Navigation** via Expo Router (file-based routing)
+- **Support clavier / scroll** (KeyboardAvoidingView + ScrollView)
+- **Safe Area** (SafeAreaProvider + SafeAreaView)
 
-   ```bash
-   npm install
-   ```
+## Stack
 
-2. Start the app
+- Expo
+- React Native
+- Expo Router
+- react-native-safe-area-context
 
-   ```bash
-   npx expo start
-   ```
+## Démarrage
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Installer les dépendances
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Lancer le projet
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Ensuite, ouvre l'app sur :
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Expo Go
+- Android Emulator
+- iOS Simulator
 
-## Join the community
+## Structure des routes
 
-Join our community of developers creating universal apps.
+Les écrans se trouvent dans `app/` (Expo Router) :
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `app/index.tsx` : Login
+- `app/sign-up.tsx` : Sign Up
+- `app/forgot-password.tsx` : Forgot Password
+- `app/verify-email.tsx` : Verify Email
+
+## Captures
+
+### Login
+
+> Ajoute le fichier `assets/images/login.png` (ou renomme ton image) pour que la capture s'affiche ici.
+
+![Login](assets/images/login.png)
+
+### Sign Up
+
+![Sign Up](assets/images/Signup.png)

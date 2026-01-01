@@ -59,7 +59,10 @@ export default function Index() {
             <View style={styles.passwordTextContainer}>
               
               <Text>Password</Text>
-              <Text style={styles.forgotPasswordText}>Forgot Password</Text>
+
+              <Link href="/forgot-password" asChild>
+                <Text style={styles.forgotPasswordText}>Forgot Password</Text>
+              </Link>
             </View>
             <TextInput
               style={styles.emailSignInInput}

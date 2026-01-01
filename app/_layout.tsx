@@ -1,13 +1,19 @@
 import { Stack } from "expo-router";
-import  {SafeAreaView} from 'react-native-safe-area-context';
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function RootLayout() {
   return (
-  <SafeAreaView style={{ flex: 1 }}>
-  <Stack >
-    <Stack.Screen name="index" options={{ headerShown: false }} />
-    <Stack.Screen name="sign-up" options={{ headerShown: false }} />
-  </Stack>
-  </SafeAreaView>
+  <SafeAreaProvider>
+    <Stack screenOptions={{
+     headerLeft: () => <Ionicons name="arrow-back" size={24} color="black" />,
+    }} >
+      <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="sign-up" options={{ headerShown: false }} />
+      <Stack.Screen name="forgot-password" options={{ headerShown: false }} />
+      <Stack.Screen name="verify-email" options={{ headerShown: false }} />
+
+    </Stack>
+  </SafeAreaProvider>
   );
 }
